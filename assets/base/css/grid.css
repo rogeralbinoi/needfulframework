@@ -1,0 +1,69 @@
+/*	Container inicio
+==================*/
+
+.container {
+	max-width: 960px; /* Alteravel*/
+	margin: 0 auto;
+}
+
+.container:after, /* Apenas um ":" sera removido mais em diante*/
+.container::after,
+.container:before, /* Apenas um ":" sera removido mais em diante*/
+.container::before {
+	content: "";
+	display: table;
+} 
+
+.container:after,
+.container::after {
+	clear: both;
+}
+
+.row:after,
+.row::after,
+.row:before,
+.row::before {
+	content: "";
+	display: table;
+} 
+
+.row:after,
+.row::after {
+	clear: both;
+}
+
+/*	Grid inicio
+======================*/
+
+[class^="grid-"] {
+	position: static; /* Obrigar elemento ser estático*/
+	display: block;
+	margin-left: 3%;
+	float: left;
+}
+[class^="grid-"]:first-child {
+	margin-left: 0;
+}
+
+.grid-quarter { /* Equivalente a 3*/
+	width: 22.75%;
+}
+
+.grid-half { /* Equivalente a 6*/
+	width: 48.5%;
+}
+
+.grid-three-quarter { /* Equivalente a 9*/
+	width: 74.25%;
+}
+
+.grid-quarter-full { /* Equivalente a 12*/
+	margin: 0;
+	width: 100%;
+}
+
+/*	Modulo gridview
+===============*/
+[class^="gridv"] [class^="grid"] {  /* Somente para debug, pensar em um modulo somente para debug*/
+	background: rgb(255,230,230) !important;
+}

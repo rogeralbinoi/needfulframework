@@ -1,0 +1,15 @@
+.page-header {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	color: #FFF;
+	background: #333;
+}
+
+.path {
+	display: block;
+	border: 1px solid #E5E5E5;
+	padding: .2em;
+	margin-top: .1em;
+	margin-bottom: 1em;
+	color: #d35400;
+}
